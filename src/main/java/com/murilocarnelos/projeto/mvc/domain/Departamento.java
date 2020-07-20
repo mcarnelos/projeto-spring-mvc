@@ -10,6 +10,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "DEPARTAMENTOS")
 public class Departamento extends AbstractEntity<Long>{//herda o id da classe do tipo long
+	private static final long serialVersionUID = 1L;
 
 	@Column(name = "nome", nullable = false, unique = true, length = 60)
 	private String nome;
